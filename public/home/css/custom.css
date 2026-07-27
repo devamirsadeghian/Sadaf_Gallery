@@ -1,0 +1,55 @@
+.products-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.products-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.products-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 20px;
+}
+
+.product-item {
+    flex: 0 0 auto;
+    width: 220px;
+}
+
+
+.products-scroll {
+    scrollbar-width: none;
+}
+
+.products-scroll::-webkit-scrollbar {
+}
+
+
+/* border color */
+.category-card{
+    border:2px solid transparent;
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    border-color: var(--pink-color);   /* رنگ دلخواه */
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transform:translateY(-5px);
+}
+
+
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #0d6efd;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --pink-color: #ec65e7;
+}

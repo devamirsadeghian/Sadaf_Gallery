@@ -19,7 +19,7 @@ The project follows Laravel's best practices and emphasizes clean architecture, 
 
 ## About the Project
 
-This project is built with **Laravel** and the **Blade** templating engine. In addition to the web application, it includes a set of RESTful APIs that can be used for third-party integrations, mobile applications, or any other API-driven services.
+This project is built with **Laravel** and the **Blade** templating engine. In addition to the web application, it includes a set of RESTFULL APIs that can be used for third-party integrations, mobile applications, or any other API-driven services.
 The project has been developed with a strong focus on clean architecture, code readability, and Laravel best practices. The directory structure, file organization, and overall codebase are intentionally kept clean and consistent, making the project easy to understand, maintain, and extend.
 The goal is to provide a well-structured, maintainable, and developer-friendly codebase that can serve as a solid foundation for future development.
 
@@ -37,7 +37,7 @@ The goal is to provide a well-structured, maintainable, and developer-friendly c
 
 * Clean and organized Laravel architecture
 * Blade-based responsive frontend
-* RESTful API implementation
+* RESTFULL API implementation
 * Authentication using Laravel Sanctum
 * Role & Permission management
 * CRUD operations
@@ -55,7 +55,7 @@ The goal is to provide a well-structured, maintainable, and developer-friendly c
 - MVC Architecture
 - Service Layer
 - Repository Pattern (where applicable)
-- RESTful API Design
+- RESTFULL API Design
 - Laravel Form Requests
 - Policy & Middleware Authorization
 - Eloquent ORM
@@ -97,7 +97,7 @@ The objective is to create a codebase that is easy for other developers to under
 
 # 🌐 API
 
-The application includes RESTful APIs that can be consumed independently from the Blade frontend.
+The application includes RESTFULL APIs that can be consumed independently from the Blade frontend.
 
 The API architecture allows easy integration with:
 
@@ -194,13 +194,8 @@ Add screenshots or GIFs demonstrating the application's key features.
 
 ## Future Improvements
 
-- Docker Support
-- PHPUnit Tests
 - GitHub Actions CI/CD
 - Redis Caching
-- Queue & Jobs
-- API Documentation (Swagger)
-- Multi-language Support
 
 ---
 

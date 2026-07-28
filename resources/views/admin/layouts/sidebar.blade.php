@@ -7,10 +7,8 @@
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('users.create')}}">ایجاد کاربر</a></li>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('users.index')}}">لیست کاربران</a></li>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('baskets')}}">لیست فروش</a></li>
-            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('log')}}">لیست لاگ ها</a></li>
-            <a class="nav-link text-white text-center" href="{{ url('/telescope/requests') }}">
-                Telescope
-            </a>
+            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('log')}}">Log-Viewer</a></li>
+            <a class="nav-link text-white text-center" href="{{ url('/telescope/requests') }}">Telescope</a>
             {{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.create')}}">ایجاد نقش</a></li>--}}
             {{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.index')}}">لیست نقش‌ها</a></li>--}}
             <hr>

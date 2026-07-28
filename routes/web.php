@@ -54,6 +54,7 @@ Route::middleware('auth')->group(function () {
 });
 
 
+
 // admin
 Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
     Route::get('index', [\App\Http\Controllers\Admin\PanelController::class,'panel'])->name('panel.index');
@@ -93,7 +94,6 @@ Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
 
     Route::get('contacts/index',[\App\Http\Controllers\Admin\ContactController::class,'index'])->name('contacts.index');
     Route::patch('contacts/read/{id}', [\App\Http\Controllers\Admin\ContactController::class,'read'])->name('contacts.read');
-
 
 
     // من جداول orders , order_details را از روی ویودیو اموزشی دیدم که درگاه پرداخت فیک داشت

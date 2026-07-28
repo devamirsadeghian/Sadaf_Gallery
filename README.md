@@ -1,4 +1,4 @@
-# 🚀 Sadaf Design
+# 🚀 Sadaf Gallery
 
 🇮🇷 فارسی | 🇺🇸 [View English Version](README.md)
 

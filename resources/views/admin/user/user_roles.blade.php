@@ -10,7 +10,7 @@
                 </div>
             @endif
         </div>
-{{--        @include('admin.layouts.errors')--}}
+        @include('admin.layouts.errors')
         <div class="card">
             <div class="card-body">
                 <div class="container">
@@ -67,5 +67,14 @@
             </div>
         </div>
     </main>
+
+@endsection
+
+
+@section('css')
+
+@endsection
+
+@section('script')
 
 @endsection

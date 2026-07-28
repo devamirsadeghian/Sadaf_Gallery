@@ -48,7 +48,7 @@ class AuthController extends Controller
             if($mobileUser){
                 return redirect()->route('login')->with('error', __('messages.auth.exist'));
             }else{
-                $user = User::registerUser($request);
+                $user = User::createUser($request);
                 Auth::login($user);
                 return redirect()->route('login')->with('success', __('messages.auth.created'));
             }

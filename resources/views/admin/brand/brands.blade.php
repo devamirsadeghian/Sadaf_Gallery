@@ -1,7 +1,6 @@
 @extends('admin.layouts.master')
 
 
-
 @section('content')
     <main class="">
         <div class="card">
@@ -51,4 +50,14 @@
             </div>
         </div>
     </main>
+@endsection
+
+
+
+@section('css')
+
+@endsection
+
+@section('script')
+
 @endsection

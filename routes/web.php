@@ -29,6 +29,8 @@ Route::get('/shop/filter', [\App\Http\Controllers\Home\HomeController::class,'fi
 Route::get('/contact',[\App\Http\Controllers\Admin\ContactController::class,'contact'])->name('contact');
 Route::post('/contact/add',[\App\Http\Controllers\Admin\ContactController::class,'store'])->name('contact.store');
 
+Route::get('log', [\App\Http\Controllers\Admin\LogViewerController::class,'log'])->name('log');
+
 
 // auth
 Route::middleware('auth')->group(function () {
@@ -99,5 +101,3 @@ Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
 //    Route::get('orders', [\App\Http\Controllers\Admin\OrderController::class,'orders'])->name('orders');
 //    Route::get('order_details/{id}', [\App\Http\Controllers\Admin\OrderController::class,'order_details'])->name('order_details');
 });
-
-Route::get('log-viewer', [\App\Http\Controllers\Admin\LogViewerController::class,'index'])->name('log-viewer');

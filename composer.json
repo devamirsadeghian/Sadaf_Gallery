@@ -10,7 +10,9 @@
         "hekmatinasser/verta": "^9.0",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
+        "laravel/telescope": "^5.21",
         "laravel/tinker": "^2.8",
+        "opcodesio/log-viewer": "^3.24",
         "spatie/laravel-permission": "^6.25"
     },
     "require-dev": {

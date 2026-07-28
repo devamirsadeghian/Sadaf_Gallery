@@ -1,10 +1,17 @@
 <header class="navbar navbar-expand-lg bg-dark shadow-sm px-4 py-2">
 
     <!-- عنوان -->
-    <div class="d-flex align-items-center">
-        <h5 class="mb-0 fw-bold text-white">
-            پنل مدیریت
-        </h5>
+    <div class="d-flex align-items-center gap-2">
+    <span class="text-light">
+        پنل مدیریت
+    </span>
+
+        <i class="bi bi-chevron-left text-secondary pr-3"></i>
+
+        <span class="badge bg-warning text-dark py-2 font-size-14 text-center"
+              style="min-width: 180px;">
+            {{ $title }}
+        </span>
     </div>
 
     <!-- آیکون‌ها -->

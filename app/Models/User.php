@@ -142,7 +142,7 @@ class User extends Authenticatable
     }
 
 
-    public static function registerUser($request)
+    public static function createUser($request)
     {
         return  self::query()->create([
             'name' => $request->name,

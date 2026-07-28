@@ -7,8 +7,12 @@
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('users.create')}}">ایجاد کاربر</a></li>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('users.index')}}">لیست کاربران</a></li>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('baskets')}}">لیست فروش</a></li>
-{{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.create')}}">ایجاد نقش</a></li>--}}
-{{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.index')}}">لیست نقش‌ها</a></li>--}}
+            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('log')}}">لیست لاگ ها</a></li>
+            <a class="nav-link text-white text-center" href="{{ url('/telescope/requests') }}">
+                Telescope
+            </a>
+            {{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.create')}}">ایجاد نقش</a></li>--}}
+            {{--            <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('roles.index')}}">لیست نقش‌ها</a></li>--}}
             <hr>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('categories.create')}}">ایجاد دسته بندی</a></li>
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('categories.index')}}">لیست دسته بندی</a></li>
@@ -24,7 +28,6 @@
             <li class="nav-item"><a class="nav-link text-white text-center" href="{{route('contacts.index')}}">لیست تماس با ما</a></li>
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
-
                 <button id="btnDelete" type="submit" class="dropdown-item text-light text-center border-0">
                     <i class="fa fa-right-from-bracket"></i>
                     خروج

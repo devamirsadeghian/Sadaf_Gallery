@@ -35,12 +35,11 @@
     </main>
 @endsection
 
+
+@section('css')
+
+@endsection
+
 @section('script')
-    <script>
-        $('form-select').select2({
-            dir : "rtl",
-            dropdownAutoWidth : true,
-            dropdownParent : $("#parent")
-        });
-    </script>
+
 @endsection

@@ -1,66 +1,210 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Project Name
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+🇺🇸 English | 🇮🇷 [مشاهده نسخه فارسی](README.fa.md)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 🚀 نام پروژه
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+🇮🇷 فارسی | 🇺🇸 [View English Version](README.md)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+# ✨ Overview
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project is built with **Laravel** and the **Blade** templating engine. In addition to the web interface, it provides a collection of RESTful APIs that can be used for mobile applications, third-party integrations, or any API-driven frontend.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The project follows Laravel's best practices and emphasizes clean architecture, readability, and maintainability. Every effort has been made to keep the codebase organized, modular, and easy to extend.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## About the Project
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+This project is built with **Laravel** and the **Blade** templating engine. In addition to the web application, it includes a set of RESTful APIs that can be used for third-party integrations, mobile applications, or any other API-driven services.
+The project has been developed with a strong focus on clean architecture, code readability, and Laravel best practices. The directory structure, file organization, and overall codebase are intentionally kept clean and consistent, making the project easy to understand, maintain, and extend.
+The goal is to provide a well-structured, maintainable, and developer-friendly codebase that can serve as a solid foundation for future development.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## درباره پروژه
 
-## Contributing
+این پروژه با استفاده از **Laravel** و موتور قالب **Blade** توسعه داده شده است. علاوه بر نسخه وب، مجموعه‌ای از APIها نیز برای بخش‌های مختلف پروژه پیاده‌سازی شده‌اند تا در صورت نیاز بتوان از آن‌ها برای توسعه اپلیکیشن‌های دیگر یا یکپارچه‌سازی با سرویس‌های خارجی استفاده کرد.
+در توسعه این پروژه، تمرکز بر رعایت استانداردهای لاراول، خوانایی کد و سادگی ساختار بوده است. ساختار پوشه‌ها، سازمان‌دهی فایل‌ها و معماری پروژه به گونه‌ای طراحی شده‌اند که نگهداری، توسعه و درک پروژه برای سایر توسعه‌دهندگان آسان باشد.
+از الگوهای رایج لاراول و بهترین شیوه‌های توسعه (Best Practices) استفاده شده است تا پروژه از نظر کیفیت کدنویسی، توسعه‌پذیری و نگهداری، ساختاری منظم و قابل اعتماد داشته باشد.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+# 🔥 Features
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Clean and organized Laravel architecture
+* Blade-based responsive frontend
+* RESTful API implementation
+* Authentication using Laravel Sanctum
+* Role & Permission management
+* CRUD operations
+* Request validation
+* Eloquent ORM relationships
+* Exception and error handling
+* Reusable components
+* Clean routing structure
+* Scalable project architecture
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Architecture Highlights
 
-## License
+- MVC Architecture
+- Service Layer
+- Repository Pattern (where applicable)
+- RESTful API Design
+- Laravel Form Requests
+- Policy & Middleware Authorization
+- Eloquent ORM
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+# 🛠️ Packages
+
+This project integrates several well-established Laravel packages:
+
+| Package                       | Purpose                            |
+| ----------------------------- | ---------------------------------- |
+| **Laravel Sanctum**           | API Authentication                 |
+| **Spatie Laravel Permission** | Roles & Permissions                |
+| **Laravel Telescope**         | Debugging & Application Monitoring |
+| **Opcodes Log Viewer**        | Beautiful Log Management Interface |
+
+---
+
+# 💻 Code Quality
+
+The project was developed with a strong emphasis on software engineering principles.
+
+### Development Goals
+
+* Clean Code
+* Laravel Best Practices
+* SOLID-friendly architecture
+* Readability
+* Maintainability
+* Scalability
+* Consistent folder structure
+* Modular components
+* Reusable business logic
+
+The objective is to create a codebase that is easy for other developers to understand, maintain, and extend.
+
+---
+
+# 🌐 API
+
+The application includes RESTful APIs that can be consumed independently from the Blade frontend.
+
+The API architecture allows easy integration with:
+
+* Mobile Applications
+* React
+* Vue
+* Third-party Services
+* External Systems
+
+Authentication is handled securely using **Laravel Sanctum**.
+
+---
+
+# ⚙️ Installation
+
+```bash
+git clone https://github.com/your-username/project-name.git
+
+cd project-name
+
+composer install
+
+cp .env.example .env
+
+php artisan key:generate
+
+php artisan migrate --seed
+
+npm install
+
+npm run build
+
+php artisan serve
+```
+
+---
+
+# 📦 Additional Setup
+
+If you're installing the project from scratch, make sure the required packages are installed and configured.
+
+### Laravel Sanctum
+
+```bash
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
+```
+
+### Spatie Permission
+
+```bash
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan migrate
+```
+
+### Laravel Telescope
+
+```bash
+composer require laravel/telescope
+php artisan telescope:install
+php artisan migrate
+```
+
+Available at:
+
+```
+/telescope
+```
+
+### Log Viewer
+
+```bash
+composer require opcodesio/log-viewer
+
+php artisan vendor:publish --tag=log-viewer-config
+php artisan vendor:publish --tag=log-viewer-assets
+```
+
+Available at:
+
+```
+/log-viewer
+```
+
+---
+
+# 📸 Screenshots
+
+Add screenshots or GIFs demonstrating the application's key features.
+
+---
+
+## Future Improvements
+
+- Docker Support
+- PHPUnit Tests
+- GitHub Actions CI/CD
+- Redis Caching
+- Queue & Jobs
+- API Documentation (Swagger)
+- Multi-language Support
+
+---
+
+# 📄 License
+
+This project is intended for educational and portfolio purposes.
+

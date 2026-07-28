@@ -52,3 +52,13 @@
         </div>
     </main>
 @endsection
+
+
+
+@section('css')
+
+@endsection
+
+@section('script')
+
+@endsection

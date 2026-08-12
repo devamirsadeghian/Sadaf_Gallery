@@ -187,13 +187,6 @@ Add screenshots or GIFs demonstrating the application's key features.
 
 ---
 
-## Future Improvements
-
-- GitHub Actions CI/CD
-- Redis Caching
-
----
-
 # 📄 License
 
 This project is intended for educational and portfolio purposes.

@@ -93,10 +93,4 @@ Route::middleware(['auth','admin'])->prefix('admin')->group(function () {
 
     Route::get('contacts/index',[\App\Http\Controllers\Admin\ContactController::class,'index'])->name('contacts.index');
     Route::patch('contacts/read/{id}', [\App\Http\Controllers\Admin\ContactController::class,'read'])->name('contacts.read');
-
-
-    // من جداول orders , order_details را از روی ویودیو اموزشی دیدم که درگاه پرداخت فیک داشت
-    // جداول baskets , baskets_details رو به کمک chat gpt نوشتم که ادامه روند رو بلد نبودم داشت
-//    Route::get('orders', [\App\Http\Controllers\Admin\OrderController::class,'orders'])->name('orders');
-//    Route::get('order_details/{id}', [\App\Http\Controllers\Admin\OrderController::class,'order_details'])->name('order_details');
 });

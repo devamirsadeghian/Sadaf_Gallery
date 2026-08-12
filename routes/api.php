@@ -43,8 +43,7 @@ Route::prefix('/v1')->group(function (){
 });
 
 
-// middleware('auth:sanctum')->
-Route::prefix('/v1')->group(function (){
+Route::prefix('/v1')->middleware('auth:sanctum')->group(function (){
     Route::post('profile',[\App\Http\Controllers\Api\V1\UserApiController::class,'profile'])->name('profile');
 
     Route::post('payment',[\App\Http\Controllers\Api\V1\PaymentController::class,'payment'])->name('payment');

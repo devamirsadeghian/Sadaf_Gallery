@@ -18,7 +18,7 @@ class BasketResource extends JsonResource
             'id' => $this->id,
             'code' => $this->code,
             'status' => $this->status,
-            'order_details' => OrderDetailsResource::collection($this->order_details),
+            'order_details' => BasketDetailsResource::collection($this->basket_details),
         ];
     }
 }

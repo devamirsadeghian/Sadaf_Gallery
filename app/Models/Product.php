@@ -90,6 +90,12 @@ class Product extends Model
     }
 
 
+    public function getTotalPriceAttribute()
+    {
+        return $this->price - $this->discount;
+    }
+
+
     public static function saveImage($request)
     {
         if($request){

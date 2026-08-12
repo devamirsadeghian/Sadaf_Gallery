@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\Auth\RegisterRequest;
+use App\Http\Requests\User\CreateUserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -40,7 +40,7 @@ class AuthController extends Controller
     }
 
 
-    public function register_post(RegisterRequest $request)
+    public function register_post(CreateUserRequest $request)
     {
         if( $request->password == $request->password_confirmation ){
             $mobileUser = User::where('mobile',$request->mobile)->first();

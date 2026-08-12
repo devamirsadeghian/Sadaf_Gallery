@@ -61,8 +61,7 @@ class ProductsApiController extends Controller
         return self::success(__('api.products.most_expensive_products'),[
             Keys::brands => Brand::getAllBrandsResource(),
             Keys::most_expensive_products => ProductResource::collection(ProductRepository::getMostExpensiveProducts()),
-        ],
-            'application products page', 200);
+        ], 200);
     }
 
 
@@ -78,8 +77,7 @@ class ProductsApiController extends Controller
 //  products_by***
     public static function products_by_category($id)
     {
-        return self::success(__('api.auth.products_by_category'),[
-            Keys::brands => Brand::getAllBrandsResource(),
+        return self::success(__('api.products.products_by_category'),[
             Keys::products_by_category => ProductRepository::getProductsByCategory($id)->response()->getData(true),
         ], 200);
     }
@@ -88,7 +86,6 @@ class ProductsApiController extends Controller
     public static function products_by_brand($id)
     {
         return self::success(__('api.products.products_by_brand'),[
-            Keys::brands => Brand::getAllBrandsResource(),
             Keys::products_by_brand => ProductRepository::getProductsByBrand($id)->response()->getData(true),
         ], 200);
     }
@@ -108,8 +105,8 @@ class ProductsApiController extends Controller
     public static function save_product_comment(Request $request)
     {
         $user = auth()->user();
-        $comment = Comment::createComment($request);
         $product = Product::getProduct($request->product_id);
+        $comment = Comment::createUserComment($request, $user, $product);
 
         return self::success(__('api.products.save_product_comment'),[
             new ProductResource($product)
@@ -120,7 +117,6 @@ class ProductsApiController extends Controller
     public static function search_product(Request $request)
     {
         return self::success(__('api.products.search_product'),[
-            Keys::brands => Brand::getAllBrandsResource(),
             Keys::search_products => ProductRepository::SearchedProducts($request->search)->response()->getData(true),
         ], 200);
     }

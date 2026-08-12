@@ -15,19 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 // Base_url = http://127.0.0.1:8000/api/v1/...
 
-// middleware('auth:sanctum')->
+
 Route::prefix('/v1')->group(function (){
     Route::post('register',[\App\Http\Controllers\Api\V1\UserApiController::class,'register']);
-    Route::post('profile',[\App\Http\Controllers\Api\V1\UserApiController::class,'profile'])->name('profile');
 
-    Route::post('payment',[\App\Http\Controllers\Api\V1\PaymentController::class,'payment'])->name('payment');
-
-    Route::post('save_product_comment',[\App\Http\Controllers\Api\V1\ProductsApiController::class,'save_product_comment']);
-    Route::post('received_orders',[\App\Http\Controllers\Api\V1\UserApiController::class,'received_orders'])->name('received_orders');
-});
-
-
-Route::prefix('/v1')->group(function (){
     Route::post('send_sms',[\App\Http\Controllers\Api\V1\AuthApiController::class,'send_sms']);
     Route::post('verify_sms',[\App\Http\Controllers\Api\V1\AuthApiController::class,'verify_sms']);
 
@@ -47,8 +38,17 @@ Route::prefix('/v1')->group(function (){
 
     Route::get('/call_back',[\App\Http\Controllers\Api\V1\PaymentController::class,'call_back']);
 
-
     // test api Resource
     Route::apiResource('tests', \App\Http\Controllers\Api\V1\TestController::class);
 });
 
+
+// middleware('auth:sanctum')->
+Route::prefix('/v1')->group(function (){
+    Route::post('profile',[\App\Http\Controllers\Api\V1\UserApiController::class,'profile'])->name('profile');
+
+    Route::post('payment',[\App\Http\Controllers\Api\V1\PaymentController::class,'payment'])->name('payment');
+
+    Route::post('save_product_comment',[\App\Http\Controllers\Api\V1\ProductsApiController::class,'save_product_comment']);
+    Route::post('received_orders',[\App\Http\Controllers\Api\V1\UserApiController::class,'received_orders'])->name('received_orders');
+});

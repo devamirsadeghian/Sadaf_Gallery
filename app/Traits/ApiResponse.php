@@ -11,7 +11,7 @@ trait ApiResponse {
         ], $status);
     }
 
-    public static function error($message = null, $status = 400) {
+    public static function error(string $message = null, $status = 400) {
         return response()->json([
             'success' => false,
             'message' => $message,

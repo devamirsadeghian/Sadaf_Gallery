@@ -32,7 +32,6 @@ Route::post('/contact/add',[\App\Http\Controllers\Admin\ContactController::class
 Route::get('log', [\App\Http\Controllers\Admin\LogViewerController::class,'log'])->name('log');
 
 
-// auth
 Route::middleware('auth')->group(function () {
     Route::post('/paymentWeb',[\App\Http\Controllers\Home\PaymentController::class,'paymentWeb'])->name('paymentWeb');
 

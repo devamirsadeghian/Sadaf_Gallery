@@ -19,10 +19,12 @@ class SmsCode extends Model
 
     public static function ckeckTwoMinute($mobile)
     {
-        $check = self::query()->where('mobile',$mobile)
-        ->where('created_at','>',Carbon::now()->subMinute(2))->first();
+        $check = self::query()
+            ->where('mobile', $mobile)
+            ->where('created_at', '>', Carbon::now()->subMinute(2))
+            ->first();
 
-        if($check){
+        if ($check) {
             return false;
         }
         return true;
@@ -36,15 +38,11 @@ class SmsCode extends Model
         ]);
     }
 
-    public static function checkSend($mobile,$code)
+    public static function checkSend($mobile, $code)
     {
-        $check = SmsCode::query()->where('mobile',$mobile)
-            ->where('code',$code)
-            ->get();
-
-        if ($check){
-            return true;
-        }
-        return false;
+        return self::query()
+            ->where('mobile', $mobile)
+            ->where('code', $code)
+            ->exists();
     }
 }

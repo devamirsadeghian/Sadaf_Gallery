@@ -201,4 +201,9 @@ class User extends Authenticatable
             'lang' => $request->lang,
         ]);
     }
+
+    public static function findWithMobile($mobile)
+    {
+        return self::query()->where('mobile',$mobile)->first();
+    }
 }

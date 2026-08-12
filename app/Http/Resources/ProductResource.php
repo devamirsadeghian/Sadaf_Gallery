@@ -20,6 +20,7 @@ class ProductResource extends JsonResource
             'title_fa' => $this->title_fa,
             'title_en' => $this->title_en,
             'price' => $this->price,
+            'total_price' => $this->totalprice ?? null,
             'review' => $this->review,
             'count' => $this->count,
             'sold' => $this->sold,
@@ -30,15 +31,15 @@ class ProductResource extends JsonResource
             'is_special' => $this->is_special,
             'special_expiration' => $this->special_expiration,
             'category_id' => $this->category_id,
-            'category' => $this->category->title,
+            'category' => $this->category->title ?? null,
             'brand_id' => $this->brand_id,
-            'brand' => $this->brand->title,
+            'brand' => $this->brand->title  ?? null,
             'discount_percent' => $this->discount_percent,
             'average_rate' => $this->average_rate,
+
             // یکمی پیچیده تره
             'comments' => CommentResource::collection($this->comments),
             'colors' => ColorResource::collection($this->colors),
-//            'properties' => PropertyResource::collection($this->properties),
         ];
     }
 }

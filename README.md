@@ -109,7 +109,7 @@ Authentication is handled securely using **Laravel Sanctum**.
 # ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/devamirsadeghian/Sadaf_Gallery.git
 
 cd project-name
 

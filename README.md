@@ -117,15 +117,12 @@ composer install
 
 cp .env.example .env
 
-php artisan key:generate
-
 php artisan migrate --seed
 
 npm install
 
-npm run build
-
 php artisan serve
+
 ```
 
 ---
@@ -150,34 +147,6 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 php artisan migrate
 ```
 
-### Laravel Telescope
-
-```bash
-composer require laravel/telescope
-php artisan telescope:install
-php artisan migrate
-```
-
-Available at:
-
-```
-/telescope
-```
-
-### Log Viewer
-
-```bash
-composer require opcodesio/log-viewer
-
-php artisan vendor:publish --tag=log-viewer-config
-php artisan vendor:publish --tag=log-viewer-assets
-```
-
-Available at:
-
-```
-/log-viewer
-```
 
 ---
 

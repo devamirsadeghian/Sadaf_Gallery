@@ -18,15 +18,6 @@ This project is built with **Laravel** and the **Blade** templating engine. In a
 The project has been developed with a strong focus on clean architecture, code readability, and Laravel best practices. The directory structure, file organization, and overall codebase are intentionally kept clean and consistent, making the project easy to understand, maintain, and extend.
 The goal is to provide a well-structured, maintainable, and developer-friendly codebase that can serve as a solid foundation for future development.
 
-[//]: # (---)
-
-[//]: # (## درباره پروژه)
-
-[//]: # (این پروژه با استفاده از **Laravel** و موتور قالب **Blade** توسعه داده شده است. علاوه بر نسخه وب، مجموعه‌ای از APIها نیز برای بخش‌های مختلف پروژه پیاده‌سازی شده‌اند تا در صورت نیاز بتوان از آن‌ها برای توسعه اپلیکیشن‌های دیگر یا یکپارچه‌سازی با سرویس‌های خارجی استفاده کرد.)
-[//]: # (در توسعه این پروژه، تمرکز بر رعایت استانداردهای لاراول، خوانایی کد و سادگی ساختار بوده است. ساختار پوشه‌ها، سازمان‌دهی فایل‌ها و معماری پروژه به گونه‌ای طراحی شده‌اند که نگهداری، توسعه و درک پروژه برای سایر توسعه‌دهندگان آسان باشد.)
-[//]: # (از الگوهای رایج لاراول و بهترین شیوه‌های توسعه &#40;Best Practices&#41; استفاده شده است تا پروژه از نظر کیفیت کدنویسی، توسعه‌پذیری و نگهداری، ساختاری منظم و قابل اعتماد داشته باشد.)
-
----
 
 # 🔥 Features
 
@@ -121,6 +112,8 @@ npm install
 
 php artisan serve
 
+php artisan key:generate
+
 ```
 
 ---
@@ -131,32 +124,27 @@ If you're installing the project from scratch, make sure the required packages a
 
 ### Laravel Sanctum
 
-[//]: # (```bash)
+```bash
 
-[//]: # (composer require laravel/sanctum)
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
 
-[//]: # (php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider")
+```
 
-[//]: # (php artisan migrate)
 
-[//]: # (```)
+### Spatie Permission
 
-[//]: # ()
-[//]: # (### Spatie Permission)
 
-[//]: # ()
-[//]: # (```bash)
+```bash
 
-[//]: # (composer require spatie/laravel-permission)
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan migrate
 
-[//]: # (php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider")
 
-[//]: # (php artisan migrate)
 
-[//]: # ()
-[//]: # ()
-[//]: # (```)
-php artisan key:generate
+```
 
 
 ---

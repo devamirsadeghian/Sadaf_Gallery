@@ -131,22 +131,32 @@ If you're installing the project from scratch, make sure the required packages a
 
 ### Laravel Sanctum
 
-```bash
-composer require laravel/sanctum
-php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
-php artisan migrate
-```
+[//]: # (```bash)
 
-### Spatie Permission
+[//]: # (composer require laravel/sanctum)
 
-```bash
-composer require spatie/laravel-permission
-php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
-php artisan migrate
+[//]: # (php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider")
 
+[//]: # (php artisan migrate)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (### Spatie Permission)
+
+[//]: # ()
+[//]: # (```bash)
+
+[//]: # (composer require spatie/laravel-permission)
+
+[//]: # (php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider")
+
+[//]: # (php artisan migrate)
+
+[//]: # ()
+[//]: # ()
+[//]: # (```)
 php artisan key:generate
-
-```
 
 
 ---

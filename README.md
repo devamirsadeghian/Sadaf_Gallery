@@ -1,7 +1,5 @@
 # 🚀 Sadaf Gallery
 
-🇮🇷 فارسی | 🇺🇸 [View English Version](README.md)
-
 ---
 
 # ✨ Overview
@@ -29,7 +27,6 @@ The goal is to provide a well-structured, maintainable, and developer-friendly c
 * CRUD operations
 * Request validation
 * Eloquent ORM relationships
-* Exception and error handling
 * Reusable components
 * Clean routing structure
 * Scalable project architecture
@@ -56,8 +53,6 @@ This project integrates several well-established Laravel packages:
 | ----------------------------- | ---------------------------------- |
 | **Laravel Sanctum**           | API Authentication                 |
 | **Spatie Laravel Permission** | Roles & Permissions                |
-| **Laravel Telescope**         | Debugging & Application Monitoring |
-| **Opcodes Log Viewer**        | Beautiful Log Management Interface |
 
 ---
 
@@ -112,8 +107,6 @@ npm install
 
 php artisan serve
 
-php artisan key:generate
-
 ```
 
 ---
@@ -142,7 +135,7 @@ composer require spatie/laravel-permission
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 php artisan migrate
 
-
+php artisan key:generate
 
 ```
 

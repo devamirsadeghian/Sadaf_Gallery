@@ -139,13 +139,6 @@ php artisan key:generate
 
 ```
 
-
----
-
-# 📸 Screenshots
-
-Add screenshots or GIFs demonstrating the application's key features.
-
 ---
 
 # 📄 License
